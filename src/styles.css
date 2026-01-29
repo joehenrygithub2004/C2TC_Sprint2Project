@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* background */
+body {
+  background: linear-gradient(135deg, #4fa3d1, #ff7b95);
+  min-height: 100vh;
+}
+
+/* table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: rgba(255,255,255,0.25);
+}
+
+button {
+  cursor: pointer;
+}

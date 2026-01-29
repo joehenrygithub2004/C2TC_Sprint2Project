@@ -1,0 +1,22 @@
+<table>
+  <thead>
+  <tr>
+    <th>ID</th><th>Name</th><th>Type</th>
+    <th>Floor</th><th>Status</th><th>Rent</th>
+    <th>Edit</th><th>Delete</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let u of units">
+    <td>{{u.unitId}}</td>
+    <td>{{u.unitName}}</td>
+    <td>{{u.unitType}}</td>
+    <td>{{u.floorNumber}}</td>
+    <td>{{u.status}}</td>
+    <td>{{u.rentAmount}}</td>
+    <td><button (click)="edit.emit(u)">Edit</button></td>
+    <td><button (click)="delete.emit(u.unitId!)">Delete</button></td>
+  </tr>
+  </tbody>
+</table>

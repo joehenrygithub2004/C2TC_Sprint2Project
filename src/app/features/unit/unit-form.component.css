@@ -1,0 +1,19 @@
+
+.card {
+  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.15);
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+button {
+  background: #4cafef;
+  color: white;
+}

@@ -1,0 +1,21 @@
+<div class="card">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+
+    <input placeholder="Unit Name" formControlName="unitName">
+
+    <select formControlName="unitType">
+      <option *ngFor="let t of types" [value]="t">{{t}}</option>
+    </select>
+
+    <input type="number" placeholder="Floor" formControlName="floorNumber">
+
+    <select formControlName="status">
+      <option *ngFor="let s of statuses" [value]="s">{{s}}</option>
+    </select>
+
+    <input type="number" placeholder="Rent Amount" formControlName="rentAmount">
+
+    <button type="submit">Submit</button>
+
+  </form>
+</div>
